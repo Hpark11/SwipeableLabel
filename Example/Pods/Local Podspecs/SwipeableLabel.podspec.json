@@ -1,0 +1,22 @@
+{
+  "name": "SwipeableLabel",
+  "version": "0.1.0",
+  "summary": "A short description of SwipeableLabel.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hpark11/SwipeableLabel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hpark11": "hspark@zigzag.kr"
+  },
+  "source": {
+    "git": "https://github.com/hpark11/SwipeableLabel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwipeableLabel/Classes/**/*"
+}

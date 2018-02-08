@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SwipeableLabel'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SwipeableLabel.'
+  s.summary          = 'A collection of data is able to be shown via swiping on Label'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,13 +18,13 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    'A collection of data is able to be shown via swiping on Label'
                        DESC
 
   s.homepage         = 'https://github.com/hpark11/SwipeableLabel'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hpark11' => 'hspark@zigzag.kr' }
+  s.author           = { 'hpark11' => 'qkrgustnrk@naver.com' }
   s.source           = { :git => 'https://github.com/hpark11/SwipeableLabel.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

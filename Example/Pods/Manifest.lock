@@ -1,0 +1,16 @@
+PODS:
+  - SwipeableLabel (0.1.0)
+
+DEPENDENCIES:
+  - SwipeableLabel (from `../`)
+
+EXTERNAL SOURCES:
+  SwipeableLabel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwipeableLabel: 4ba37cfc174cf2517d2963857ffd3696d553f33c
+
+PODFILE CHECKSUM: 000d85a31c5f7ba027593e16401a3b7e8ab4ac1e
+
+COCOAPODS: 1.3.1

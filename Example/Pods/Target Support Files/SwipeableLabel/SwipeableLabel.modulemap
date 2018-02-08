@@ -1,0 +1,6 @@
+framework module SwipeableLabel {
+  umbrella header "SwipeableLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}
