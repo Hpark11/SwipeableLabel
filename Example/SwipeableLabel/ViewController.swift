@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import SwipeableLabel
 
 class ViewController: UIViewController {
 
+//    @IBOutlet weak var horizontalSwipeLabel1: SwipeableLabel!
+//
+//    @IBOutlet weak var horizontalSwipeLabel2: SwipeableLabel!
+//
+//    @IBOutlet weak var verticalSwipeLabel1: SwipeableLabel!
+//
+//    @IBOutlet weak var verticalSwipeLabel2: SwipeableLabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //let label = SwipeableLabel()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,6 +28,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 

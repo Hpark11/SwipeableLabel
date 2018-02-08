@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2E3D5634651766C3E87EE8C44E3FA25D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5A988F38202C62490089247A /* SwipeableLabelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A988F37202C62490089247A /* SwipeableLabelDelegate.swift */; };
+		5A988F3A202C626F0089247A /* SwipeableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A988F39202C626F0089247A /* SwipeableLabel.swift */; };
+		5A988F3C202C63690089247A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A988F3B202C63690089247A /* Configuration.swift */; };
 		6726D0E80E07509A0B90A4B9ECD350D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		6D5D61E0782F41342F8BB96348E8EBA0 /* SwipeableLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1DB2CB56E80D61E8AC400BBAC3465F6 /* SwipeableLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FEC193AC7890441E249A5017819085A /* Pods-SwipeableLabel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49085522AC2B0E0CABDB261DBF2CAF07 /* Pods-SwipeableLabel_Tests-dummy.m */; };
-		76D1D005BD57B5D40F912FE9F67C9948 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A64A13BA6BE5CC54243124BE8DB36B2 /* ReplaceMe.swift */; };
 		9E4991CD921FE2235D39AEAEB378B522 /* Pods-SwipeableLabel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A339F2F494314825816D9EC5FFCCEC /* Pods-SwipeableLabel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDDC770E23B16AA8D02837F9A7B27DB0 /* SwipeableLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BECF0FF22D0EB86244DDCF255039121B /* SwipeableLabel-dummy.m */; };
 		E384C1EC2AFE0A89BBD5FD57017F4F84 /* Pods-SwipeableLabel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87CDD6090DEEAD3B81000B6C9DF5A14F /* Pods-SwipeableLabel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,17 +32,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A64A13BA6BE5CC54243124BE8DB36B2 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SwipeableLabel/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		0C9232F9AF9F9FA60D34A4BA7D06C4E5 /* Pods-SwipeableLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeableLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
 		14DCF54A89242D36E22B9AC983777214 /* Pods-SwipeableLabel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwipeableLabel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		156E2374EE34A354E9084208259B00A6 /* Pods-SwipeableLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwipeableLabel_Example.modulemap"; sourceTree = "<group>"; };
+		156E2374EE34A354E9084208259B00A6 /* Pods-SwipeableLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwipeableLabel_Example.modulemap"; sourceTree = "<group>"; };
 		27342181B06F54F1A51A357F287F6BAB /* Pods-SwipeableLabel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwipeableLabel_Example-dummy.m"; sourceTree = "<group>"; };
 		2B6E403BA0CD65B9379CE0CF7A7DCC7C /* Pods-SwipeableLabel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeableLabel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		393EB75735B5E4EE2B4C460FC7C6ADFA /* SwipeableLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeableLabel.modulemap; sourceTree = "<group>"; };
+		393EB75735B5E4EE2B4C460FC7C6ADFA /* SwipeableLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwipeableLabel.modulemap; sourceTree = "<group>"; };
 		410DFB1E1163349220CEFE751D1D29C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42798F1255CF96D565ADB4BBEEF7208E /* Pods-SwipeableLabel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeableLabel_Example-resources.sh"; sourceTree = "<group>"; };
 		4435E30F28C52070133571DCBFBCE0D6 /* Pods-SwipeableLabel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwipeableLabel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		49085522AC2B0E0CABDB261DBF2CAF07 /* Pods-SwipeableLabel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwipeableLabel_Tests-dummy.m"; sourceTree = "<group>"; };
+		5A988F37202C62490089247A /* SwipeableLabelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableLabelDelegate.swift; sourceTree = "<group>"; };
+		5A988F39202C626F0089247A /* SwipeableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableLabel.swift; sourceTree = "<group>"; };
+		5A988F3B202C63690089247A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		6063D675227C870AEDACAB1BF40DB5A3 /* Pods-SwipeableLabel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwipeableLabel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6A6559478B12CE33D913EEB182E5064F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,19 +52,19 @@
 		786E185E1D333E24EFCEB342F1F61D9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87CDD6090DEEAD3B81000B6C9DF5A14F /* Pods-SwipeableLabel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwipeableLabel_Tests-umbrella.h"; sourceTree = "<group>"; };
 		894E6F74EEB68AFFD880D5EF97674AE2 /* Pods-SwipeableLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeableLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8DEC36339CCB8A8E3E5E1B2E7194826F /* Pods-SwipeableLabel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwipeableLabel_Tests.modulemap"; sourceTree = "<group>"; };
-		8E0CA66ED3BD4217138FB446DB175D4D /* SwipeableLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeableLabel.framework; path = SwipeableLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DEC36339CCB8A8E3E5E1B2E7194826F /* Pods-SwipeableLabel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwipeableLabel_Tests.modulemap"; sourceTree = "<group>"; };
+		8E0CA66ED3BD4217138FB446DB175D4D /* SwipeableLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwipeableLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DA8BAC9FA2C00FA411A7F25ED71C92 /* Pods-SwipeableLabel_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeableLabel_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		9256B6BB974E9321460FD2AA652405CF /* Pods-SwipeableLabel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwipeableLabel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9876092739FED022BC2FFBA4BEB1DFE1 /* SwipeableLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableLabel.xcconfig; sourceTree = "<group>"; };
 		A35AE9D2694335D700A1A85CA1B1051E /* Pods-SwipeableLabel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeableLabel_Tests-resources.sh"; sourceTree = "<group>"; };
 		B34F24B36437EBABDA87071FD0268C28 /* Pods-SwipeableLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeableLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BECF0FF22D0EB86244DDCF255039121B /* SwipeableLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableLabel-dummy.m"; sourceTree = "<group>"; };
 		C2A339F2F494314825816D9EC5FFCCEC /* Pods-SwipeableLabel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwipeableLabel_Example-umbrella.h"; sourceTree = "<group>"; };
-		C923E5FC020E602171F428ADDDA339D9 /* Pods_SwipeableLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwipeableLabel_Tests.framework; path = "Pods-SwipeableLabel_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C923E5FC020E602171F428ADDDA339D9 /* Pods_SwipeableLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipeableLabel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DB2CB56E80D61E8AC400BBAC3465F6 /* SwipeableLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableLabel-umbrella.h"; sourceTree = "<group>"; };
-		E4231E2E207B7C9953A40FFE234B8D2A /* Pods_SwipeableLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwipeableLabel_Example.framework; path = "Pods-SwipeableLabel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4231E2E207B7C9953A40FFE234B8D2A /* Pods_SwipeableLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipeableLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB2810812A261DE32FFB813C759BC30 /* Pods-SwipeableLabel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeableLabel_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +99,9 @@
 		3CBB3CD409153E612C2AD87190E128E6 /* SwipeableLabel */ = {
 			isa = PBXGroup;
 			children = (
-				0A64A13BA6BE5CC54243124BE8DB36B2 /* ReplaceMe.swift */,
+				5A988F37202C62490089247A /* SwipeableLabelDelegate.swift */,
+				5A988F39202C626F0089247A /* SwipeableLabel.swift */,
+				5A988F3B202C63690089247A /* Configuration.swift */,
 				449FAA319EB117EE9DA834FFF44C9848 /* Support Files */,
 			);
 			name = SwipeableLabel;
@@ -296,6 +302,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					CA1BE3FA0289438253E4DF38C142E68F = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -329,6 +340,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A988F3A202C626F0089247A /* SwipeableLabel.swift in Sources */,
+				5A988F38202C62490089247A /* SwipeableLabelDelegate.swift in Sources */,
+				5A988F3C202C63690089247A /* Configuration.swift in Sources */,
 				F532E4BB69712B24D089E912FBED41F3 /* Pods-SwipeableLabel_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D1D005BD57B5D40F912FE9F67C9948 /* ReplaceMe.swift in Sources */,
 				BDDC770E23B16AA8D02837F9A7B27DB0 /* SwipeableLabel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0C9232F9AF9F9FA60D34A4BA7D06C4E5 /* Pods-SwipeableLabel_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -381,6 +395,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -603,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B34F24B36437EBABDA87071FD0268C28 /* Pods-SwipeableLabel_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -627,6 +643,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
