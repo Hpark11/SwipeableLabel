@@ -1,15 +1,15 @@
 {
   "name": "SwipeableLabel",
   "version": "0.1.0",
-  "summary": "A short description of SwipeableLabel.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A collection of data is able to be shown via swiping on Label",
+  "description": "'A collection of data is able to be shown via swiping on Label'",
   "homepage": "https://github.com/hpark11/SwipeableLabel",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "hpark11": "hspark@zigzag.kr"
+    "hpark11": "qkrgustnrk@naver.com"
   },
   "source": {
     "git": "https://github.com/hpark11/SwipeableLabel.git",
@@ -18,5 +18,6 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SwipeableLabel/Classes/**/*"
+  "source_files": "SwipeableLabel/*.swift",
+  "frameworks": "UIKit"
 }

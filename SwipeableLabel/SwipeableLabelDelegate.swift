@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol SwipeableLabelDelegate: NSObjectProtocol {
+public protocol SwipeableLabelDelegate: NSObjectProtocol {
     func numberOfItems(in label: SwipeableLabel) -> Int
     
     func swipableLabel(_ label: SwipeableLabel, textForItem at: Int) -> String

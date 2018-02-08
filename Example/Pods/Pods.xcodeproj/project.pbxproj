@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E3D5634651766C3E87EE8C44E3FA25D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		5A988F38202C62490089247A /* SwipeableLabelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A988F37202C62490089247A /* SwipeableLabelDelegate.swift */; };
-		5A988F3A202C626F0089247A /* SwipeableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A988F39202C626F0089247A /* SwipeableLabel.swift */; };
-		5A988F3C202C63690089247A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A988F3B202C63690089247A /* Configuration.swift */; };
-		6726D0E80E07509A0B90A4B9ECD350D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6D5D61E0782F41342F8BB96348E8EBA0 /* SwipeableLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1DB2CB56E80D61E8AC400BBAC3465F6 /* SwipeableLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E3D5634651766C3E87EE8C44E3FA25D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		3DE145FAE93ECD74B13CE4735DFCEDFF /* SwipeableLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A7276CA962B33E4506C341CA13CBB2 /* SwipeableLabel-dummy.m */; };
+		479874EB8E0416BDA5323A3F8F1DA49E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		6D5D61E0782F41342F8BB96348E8EBA0 /* SwipeableLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4306AB53D0A4DACA326B7491A9A865C /* SwipeableLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FEC193AC7890441E249A5017819085A /* Pods-SwipeableLabel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49085522AC2B0E0CABDB261DBF2CAF07 /* Pods-SwipeableLabel_Tests-dummy.m */; };
+		9D91A089679F8E14CC2EA19C12F71759 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		9E4991CD921FE2235D39AEAEB378B522 /* Pods-SwipeableLabel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A339F2F494314825816D9EC5FFCCEC /* Pods-SwipeableLabel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDDC770E23B16AA8D02837F9A7B27DB0 /* SwipeableLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BECF0FF22D0EB86244DDCF255039121B /* SwipeableLabel-dummy.m */; };
+		CAAC70C8B6FD4121F2CDB46CED8F5C61 /* SwipeableLabelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0075283CEB379BD9D104D92EA440CB6C /* SwipeableLabelDelegate.swift */; };
 		E384C1EC2AFE0A89BBD5FD57017F4F84 /* Pods-SwipeableLabel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87CDD6090DEEAD3B81000B6C9DF5A14F /* Pods-SwipeableLabel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F14B04D3847945E5D3036CF91ADEB3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		EE8D75BEBDCB83E6676A04EB478B241B /* SwipeableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBB31EC310F6A4C6A9842BE47801BF /* SwipeableLabel.swift */; };
+		F14B04D3847945E5D3036CF91ADEB3B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		F43C163F50D9B5B004E8DAA970DBA0E3 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58471FBE17C418828AB074988CE5FC9 /* Configuration.swift */; };
 		F532E4BB69712B24D089E912FBED41F3 /* Pods-SwipeableLabel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27342181B06F54F1A51A357F287F6BAB /* Pods-SwipeableLabel_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -32,56 +33,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0075283CEB379BD9D104D92EA440CB6C /* SwipeableLabelDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableLabelDelegate.swift; path = SwipeableLabel/SwipeableLabelDelegate.swift; sourceTree = "<group>"; };
 		0C9232F9AF9F9FA60D34A4BA7D06C4E5 /* Pods-SwipeableLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeableLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
 		14DCF54A89242D36E22B9AC983777214 /* Pods-SwipeableLabel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwipeableLabel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		156E2374EE34A354E9084208259B00A6 /* Pods-SwipeableLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwipeableLabel_Example.modulemap"; sourceTree = "<group>"; };
+		156E2374EE34A354E9084208259B00A6 /* Pods-SwipeableLabel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwipeableLabel_Example.modulemap"; sourceTree = "<group>"; };
+		20D9DD8936AF45042ECD0B636E8F22C0 /* SwipeableLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeableLabel.modulemap; sourceTree = "<group>"; };
+		25E8E55F3F02565D78F308F689E8DB01 /* SwipeableLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableLabel.xcconfig; sourceTree = "<group>"; };
 		27342181B06F54F1A51A357F287F6BAB /* Pods-SwipeableLabel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwipeableLabel_Example-dummy.m"; sourceTree = "<group>"; };
 		2B6E403BA0CD65B9379CE0CF7A7DCC7C /* Pods-SwipeableLabel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeableLabel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		393EB75735B5E4EE2B4C460FC7C6ADFA /* SwipeableLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwipeableLabel.modulemap; sourceTree = "<group>"; };
-		410DFB1E1163349220CEFE751D1D29C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD344152DCCC8E6B25D2B3EB14AFFC0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42798F1255CF96D565ADB4BBEEF7208E /* Pods-SwipeableLabel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeableLabel_Example-resources.sh"; sourceTree = "<group>"; };
 		4435E30F28C52070133571DCBFBCE0D6 /* Pods-SwipeableLabel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwipeableLabel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		49085522AC2B0E0CABDB261DBF2CAF07 /* Pods-SwipeableLabel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwipeableLabel_Tests-dummy.m"; sourceTree = "<group>"; };
-		5A988F37202C62490089247A /* SwipeableLabelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableLabelDelegate.swift; sourceTree = "<group>"; };
-		5A988F39202C626F0089247A /* SwipeableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableLabel.swift; sourceTree = "<group>"; };
-		5A988F3B202C63690089247A /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		6063D675227C870AEDACAB1BF40DB5A3 /* Pods-SwipeableLabel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwipeableLabel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6A6559478B12CE33D913EEB182E5064F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BCE89AE1DBEEBB549E53A8AA48F6655 /* SwipeableLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableLabel-prefix.pch"; sourceTree = "<group>"; };
 		786E185E1D333E24EFCEB342F1F61D9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87CDD6090DEEAD3B81000B6C9DF5A14F /* Pods-SwipeableLabel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwipeableLabel_Tests-umbrella.h"; sourceTree = "<group>"; };
 		894E6F74EEB68AFFD880D5EF97674AE2 /* Pods-SwipeableLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeableLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8DEC36339CCB8A8E3E5E1B2E7194826F /* Pods-SwipeableLabel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwipeableLabel_Tests.modulemap"; sourceTree = "<group>"; };
-		8E0CA66ED3BD4217138FB446DB175D4D /* SwipeableLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwipeableLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DEC36339CCB8A8E3E5E1B2E7194826F /* Pods-SwipeableLabel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwipeableLabel_Tests.modulemap"; sourceTree = "<group>"; };
+		8E0CA66ED3BD4217138FB446DB175D4D /* SwipeableLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeableLabel.framework; path = SwipeableLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DA8BAC9FA2C00FA411A7F25ED71C92 /* Pods-SwipeableLabel_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeableLabel_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		9256B6BB974E9321460FD2AA652405CF /* Pods-SwipeableLabel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwipeableLabel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9876092739FED022BC2FFBA4BEB1DFE1 /* SwipeableLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableLabel.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A35AE9D2694335D700A1A85CA1B1051E /* Pods-SwipeableLabel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeableLabel_Tests-resources.sh"; sourceTree = "<group>"; };
+		ACCBB31EC310F6A4C6A9842BE47801BF /* SwipeableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableLabel.swift; path = SwipeableLabel/SwipeableLabel.swift; sourceTree = "<group>"; };
 		B34F24B36437EBABDA87071FD0268C28 /* Pods-SwipeableLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwipeableLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BECF0FF22D0EB86244DDCF255039121B /* SwipeableLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableLabel-dummy.m"; sourceTree = "<group>"; };
+		B3A7276CA962B33E4506C341CA13CBB2 /* SwipeableLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableLabel-dummy.m"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C2A339F2F494314825816D9EC5FFCCEC /* Pods-SwipeableLabel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwipeableLabel_Example-umbrella.h"; sourceTree = "<group>"; };
-		C923E5FC020E602171F428ADDDA339D9 /* Pods_SwipeableLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipeableLabel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1DB2CB56E80D61E8AC400BBAC3465F6 /* SwipeableLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableLabel-umbrella.h"; sourceTree = "<group>"; };
-		E4231E2E207B7C9953A40FFE234B8D2A /* Pods_SwipeableLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipeableLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C923E5FC020E602171F428ADDDA339D9 /* Pods_SwipeableLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwipeableLabel_Tests.framework; path = "Pods-SwipeableLabel_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E4231E2E207B7C9953A40FFE234B8D2A /* Pods_SwipeableLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwipeableLabel_Example.framework; path = "Pods-SwipeableLabel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58471FBE17C418828AB074988CE5FC9 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = SwipeableLabel/Configuration.swift; sourceTree = "<group>"; };
 		EFB2810812A261DE32FFB813C759BC30 /* Pods-SwipeableLabel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeableLabel_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F4306AB53D0A4DACA326B7491A9A865C /* SwipeableLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableLabel-umbrella.h"; sourceTree = "<group>"; };
+		F4ED79F88CE425269C7EB332B0651DE3 /* SwipeableLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableLabel-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B78B890D1E8E27D405DBB4EAF701DDA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6726D0E80E07509A0B90A4B9ECD350D5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0C17B175E22330E1E7725FF4F7D238E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2E3D5634651766C3E87EE8C44E3FA25D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C83B8F42C628C8334B3FA15E5EDB01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				479874EB8E0416BDA5323A3F8F1DA49E /* Foundation.framework in Frameworks */,
+				9D91A089679F8E14CC2EA19C12F71759 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,30 +99,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CBB3CD409153E612C2AD87190E128E6 /* SwipeableLabel */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A988F37202C62490089247A /* SwipeableLabelDelegate.swift */,
-				5A988F39202C626F0089247A /* SwipeableLabel.swift */,
-				5A988F3B202C63690089247A /* Configuration.swift */,
-				449FAA319EB117EE9DA834FFF44C9848 /* Support Files */,
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		523107FF13DA5DE670D9109255030A83 /* SwipeableLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E58471FBE17C418828AB074988CE5FC9 /* Configuration.swift */,
+				ACCBB31EC310F6A4C6A9842BE47801BF /* SwipeableLabel.swift */,
+				0075283CEB379BD9D104D92EA440CB6C /* SwipeableLabelDelegate.swift */,
+				91F79AA8D1754AA8C19017253E568330 /* Support Files */,
 			);
 			name = SwipeableLabel;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		449FAA319EB117EE9DA834FFF44C9848 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				410DFB1E1163349220CEFE751D1D29C2 /* Info.plist */,
-				393EB75735B5E4EE2B4C460FC7C6ADFA /* SwipeableLabel.modulemap */,
-				9876092739FED022BC2FFBA4BEB1DFE1 /* SwipeableLabel.xcconfig */,
-				BECF0FF22D0EB86244DDCF255039121B /* SwipeableLabel-dummy.m */,
-				6BCE89AE1DBEEBB549E53A8AA48F6655 /* SwipeableLabel-prefix.pch */,
-				D1DB2CB56E80D61E8AC400BBAC3465F6 /* SwipeableLabel-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SwipeableLabel";
 			sourceTree = "<group>";
 		};
 		598D2DE702EB43017DB6E2F2601887E2 /* Products */ = {
@@ -136,27 +142,33 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				DEC02C2F2725A656A9527BE8054D8405 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				8109F6D2317C1DA7A1F40A1939B44B55 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				598D2DE702EB43017DB6E2F2601887E2 /* Products */,
 				E92ED4BC107D65393680399F5D4DAE3E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		8109F6D2317C1DA7A1F40A1939B44B55 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				523107FF13DA5DE670D9109255030A83 /* SwipeableLabel */,
 			);
-			name = Frameworks;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		91F79AA8D1754AA8C19017253E568330 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				3FD344152DCCC8E6B25D2B3EB14AFFC0 /* Info.plist */,
+				20D9DD8936AF45042ECD0B636E8F22C0 /* SwipeableLabel.modulemap */,
+				25E8E55F3F02565D78F308F689E8DB01 /* SwipeableLabel.xcconfig */,
+				B3A7276CA962B33E4506C341CA13CBB2 /* SwipeableLabel-dummy.m */,
+				F4ED79F88CE425269C7EB332B0651DE3 /* SwipeableLabel-prefix.pch */,
+				F4306AB53D0A4DACA326B7491A9A865C /* SwipeableLabel-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwipeableLabel";
 			sourceTree = "<group>";
 		};
 		D6DAD51D7E4ABF22CC6D7840256D2C6D /* Pods-SwipeableLabel_Example */ = {
@@ -175,14 +187,6 @@
 			);
 			name = "Pods-SwipeableLabel_Example";
 			path = "Target Support Files/Pods-SwipeableLabel_Example";
-			sourceTree = "<group>";
-		};
-		DEC02C2F2725A656A9527BE8054D8405 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3CBB3CD409153E612C2AD87190E128E6 /* SwipeableLabel */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		E92ED4BC107D65393680399F5D4DAE3E /* Targets Support Files */ = {
@@ -263,8 +267,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 379BAEC431F29A3C803A3D76F7C8EFD7 /* Build configuration list for PBXNativeTarget "SwipeableLabel" */;
 			buildPhases = (
-				DA7BD6EFB5429A28F415EA5FF0C480AC /* Sources */,
-				0B78B890D1E8E27D405DBB4EAF701DDA /* Frameworks */,
+				434FA1101533778C0B74F3678FC6365C /* Sources */,
+				B9C83B8F42C628C8334B3FA15E5EDB01 /* Frameworks */,
 				B9F19DC7F2908A74B34340C38569FBAA /* Headers */,
 			);
 			buildRules = (
@@ -302,11 +306,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					CA1BE3FA0289438253E4DF38C142E68F = {
-						LastSwiftMigration = 0920;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -328,6 +327,17 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		434FA1101533778C0B74F3678FC6365C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43C163F50D9B5B004E8DAA970DBA0E3 /* Configuration.swift in Sources */,
+				3DE145FAE93ECD74B13CE4735DFCEDFF /* SwipeableLabel-dummy.m in Sources */,
+				EE8D75BEBDCB83E6676A04EB478B241B /* SwipeableLabel.swift in Sources */,
+				CAAC70C8B6FD4121F2CDB46CED8F5C61 /* SwipeableLabelDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A285B56BCF83EF62F07F8ECBEE32D29C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,18 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A988F3A202C626F0089247A /* SwipeableLabel.swift in Sources */,
-				5A988F38202C62490089247A /* SwipeableLabelDelegate.swift in Sources */,
-				5A988F3C202C63690089247A /* Configuration.swift in Sources */,
 				F532E4BB69712B24D089E912FBED41F3 /* Pods-SwipeableLabel_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA7BD6EFB5429A28F415EA5FF0C480AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BDDC770E23B16AA8D02837F9A7B27DB0 /* SwipeableLabel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +370,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0C9232F9AF9F9FA60D34A4BA7D06C4E5 /* Pods-SwipeableLabel_Example.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -395,7 +393,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -465,7 +462,7 @@
 		};
 		357ACFBC22698B41518E6FC56A109260 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9876092739FED022BC2FFBA4BEB1DFE1 /* SwipeableLabel.xcconfig */;
+			baseConfigurationReference = 25E8E55F3F02565D78F308F689E8DB01 /* SwipeableLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -618,7 +615,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B34F24B36437EBABDA87071FD0268C28 /* Pods-SwipeableLabel_Example.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -643,7 +639,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -652,7 +647,7 @@
 		};
 		D2D37E7B261BD98D0D1C86A7F911EDBC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9876092739FED022BC2FFBA4BEB1DFE1 /* SwipeableLabel.xcconfig */;
+			baseConfigurationReference = 25E8E55F3F02565D78F308F689E8DB01 /* SwipeableLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

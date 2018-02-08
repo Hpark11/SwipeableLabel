@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SwipeableLabel: 4ba37cfc174cf2517d2963857ffd3696d553f33c
+  SwipeableLabel: e7e405b68e43fa9e20c6ce0e3ff44e673cb61bfa
 
 PODFILE CHECKSUM: 000d85a31c5f7ba027593e16401a3b7e8ab4ac1e
 

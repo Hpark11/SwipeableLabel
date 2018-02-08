@@ -7,12 +7,10 @@
 
 import UIKit
 
-
-class SwipeableLabel: UILabel {
-
-    weak var delegate: SwipeableLabelDelegate?
+open class SwipeableLabel: UILabel {
+    open weak var delegate: SwipeableLabelDelegate?
     
-    var offset: CGFloat = 0.0
+    var offset: CGFloat = 50
     
     let prevAuxilaryLabel: UILabel = {
         let label = UILabel()
@@ -67,14 +65,14 @@ class SwipeableLabel: UILabel {
         case next
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         if let delegate = delegate, currentIndex < delegate.numberOfItems(in: self), currentIndex >= 0 {
             text = delegate.swipableLabel(self, textForItem: currentIndex)
         }
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         direction = .horizontal
         
@@ -88,7 +86,7 @@ class SwipeableLabel: UILabel {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     

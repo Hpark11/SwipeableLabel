@@ -27,7 +27,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ewV-8P-ZXT">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH1-SH-8zW" customClass="SwipeableLabel" customModule="Pods_SwipeableLabel_Example">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH1-SH-8zW" customClass="SwipeableLabel" customModule="SwipeableLabel">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
                                                 <color key="backgroundColor" red="0.25073542269999999" green="0.60824139580000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -39,7 +39,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLP-oH-q7e" customClass="SwipeableLabel" customModule="Pods_SwipeableLabel_Example">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLP-oH-q7e" customClass="SwipeableLabel" customModule="SwipeableLabel">
                                                 <rect key="frame" x="0.0" y="162" width="375" height="161.5"/>
                                                 <color key="backgroundColor" red="1" green="0.43192355094366786" blue="0.20751871540087818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -51,14 +51,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wx1-9M-lTC">
                                         <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fy-Jh-qld" customClass="SwipeableLabel" customModule="Pods_SwipeableLabel_Example">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fy-Jh-qld" customClass="SwipeableLabel" customModule="SwipeableLabel">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="323.5"/>
                                                 <color key="backgroundColor" red="0.10669496006395039" green="0.51414620535714284" blue="0.23221095609245826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uet-06-58x" customClass="SwipeableLabel" customModule="Pods_SwipeableLabel_Example">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uet-06-58x" customClass="SwipeableLabel" customModule="SwipeableLabel">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="323.5"/>
                                                 <color key="backgroundColor" red="0.12934452997911164" green="0.31907974037335579" blue="0.51414620535714284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -78,6 +78,12 @@
                             <constraint firstItem="sCZ-Ey-JXY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="qG0-VU-UKI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="horizontalSwipeLabel1" destination="VH1-SH-8zW" id="nt8-vE-UGD"/>
+                        <outlet property="horizontalSwipeLabel2" destination="HLP-oH-q7e" id="CSd-Su-qWM"/>
+                        <outlet property="verticalSwipeLabel1" destination="4Fy-Jh-qld" id="pTS-Lw-efR"/>
+                        <outlet property="verticalSwipeLabel2" destination="uet-06-58x" id="SQH-Yh-HGE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
