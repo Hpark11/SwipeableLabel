@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwipeableLabel_Example' do
+  pod 'SwipeableLabel', :path => '../'
+
+  target 'SwipeableLabel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
