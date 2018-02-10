@@ -112,16 +112,6 @@ open class SwipeableLabel: UILabel {
         addGestureRecognizer(swipingDownGestureRecognizer)
     }
     
-    private func transformTo(direction: UISwipeGestureRecognizerDirection) -> CGAffineTransform {
-        switch direction {
-        case .left: return CGAffineTransform(translationX: offset, y: 0)
-        case .right: return CGAffineTransform(translationX: -offset, y: 0)
-        case .down: return CGAffineTransform(translationX: 0, y: offset)
-        case .up: return CGAffineTransform(translationX: 0, y: -offset)
-        default: return CGAffineTransform(translationX: 0, y: 0)
-        }
-    }
-    
     private func removeAllGestureRecognizerTargets() {
         swipingLeftGestureRecognizer.removeTarget(self, action: #selector(swipeToNext))
         swipingRightGestureRecognizer.removeTarget(self, action: #selector(swipeToPrev))
@@ -132,8 +122,7 @@ open class SwipeableLabel: UILabel {
     @objc func swipeToPrev(_ sender: UISwipeGestureRecognizer) {
         switch movementType {
         case .dash:
-            let transform = transformTo(direction: sender.direction)
-            dash(to: .previous, affineTransform: transform)
+            dash(to: .previous, direction: sender.direction)
         case .cubical:
             cubic(to: .previous, direction: sender.direction)
         default: break
@@ -143,8 +132,7 @@ open class SwipeableLabel: UILabel {
     @objc func swipeToNext(_ sender: UISwipeGestureRecognizer) {
         switch movementType {
         case .dash:
-            let transform = transformTo(direction: sender.direction)
-            dash(to: .next, affineTransform: transform)
+            dash(to: .next, direction: sender.direction)
         case .cubical:
             cubic(to: .next, direction: sender.direction)
         default: break

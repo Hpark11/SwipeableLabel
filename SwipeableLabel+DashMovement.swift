@@ -1,5 +1,5 @@
 //
-//  DashMovement.swift
+//  SwipeableLable+DashMovement.swift
 //  SwipeableLabel
 //
 //  Created by hPark11 on 2018. 2. 9..
@@ -8,8 +8,9 @@
 import Foundation
 
 extension SwipeableLabel {
-    internal func dash(to: Move, affineTransform: CGAffineTransform) {
+    internal func dash(to: Move, direction: UISwipeGestureRecognizerDirection) {
         let presentLabel = representativeCopiedLabelModel()
+        let affineTransform = dashTransform(direction: direction)
         
         presentLabel.transform = affineTransform
         addSubview(presentLabel)
@@ -35,5 +36,15 @@ extension SwipeableLabel {
                 self.transform = .identity
             }, completion: nil)
         })
+    }
+    
+    fileprivate func dashTransform(direction: UISwipeGestureRecognizerDirection) -> CGAffineTransform {
+        switch direction {
+        case .left: return CGAffineTransform(translationX: offset, y: 0)
+        case .right: return CGAffineTransform(translationX: -offset, y: 0)
+        case .down: return CGAffineTransform(translationX: 0, y: offset)
+        case .up: return CGAffineTransform(translationX: 0, y: -offset)
+        default: return CGAffineTransform(translationX: 0, y: 0)
+        }
     }
 }
