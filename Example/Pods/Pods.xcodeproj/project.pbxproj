@@ -10,9 +10,9 @@
 		2E3D5634651766C3E87EE8C44E3FA25D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		3DE145FAE93ECD74B13CE4735DFCEDFF /* SwipeableLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A7276CA962B33E4506C341CA13CBB2 /* SwipeableLabel-dummy.m */; };
 		479874EB8E0416BDA5323A3F8F1DA49E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		5A315948202D907A0067717C /* SwipeableLabel+DashMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A315947202D907A0067717C /* SwipeableLabel+DashMovement.swift */; };
-		5A31594A202D90D70067717C /* SwipeableLabel+CubicMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A315949202D90D70067717C /* SwipeableLabel+CubicMovement.swift */; };
-		5A31594C202D960E0067717C /* SwipeableLabel+CircularMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A31594B202D960E0067717C /* SwipeableLabel+CircularMovement.swift */; };
+		5A74DBA6202F4E730097B144 /* SwipeableLabel+CubicMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A74DBA3202F4E720097B144 /* SwipeableLabel+CubicMovement.swift */; };
+		5A74DBA7202F4E730097B144 /* SwipeableLabel+CircularMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A74DBA4202F4E730097B144 /* SwipeableLabel+CircularMovement.swift */; };
+		5A74DBA8202F4E730097B144 /* SwipeableLabel+DashMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A74DBA5202F4E730097B144 /* SwipeableLabel+DashMovement.swift */; };
 		6D5D61E0782F41342F8BB96348E8EBA0 /* SwipeableLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4306AB53D0A4DACA326B7491A9A865C /* SwipeableLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FEC193AC7890441E249A5017819085A /* Pods-SwipeableLabel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49085522AC2B0E0CABDB261DBF2CAF07 /* Pods-SwipeableLabel_Tests-dummy.m */; };
 		9D91A089679F8E14CC2EA19C12F71759 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
@@ -48,9 +48,9 @@
 		42798F1255CF96D565ADB4BBEEF7208E /* Pods-SwipeableLabel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwipeableLabel_Example-resources.sh"; sourceTree = "<group>"; };
 		4435E30F28C52070133571DCBFBCE0D6 /* Pods-SwipeableLabel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwipeableLabel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		49085522AC2B0E0CABDB261DBF2CAF07 /* Pods-SwipeableLabel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwipeableLabel_Tests-dummy.m"; sourceTree = "<group>"; };
-		5A315947202D907A0067717C /* SwipeableLabel+DashMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwipeableLabel+DashMovement.swift"; sourceTree = "<group>"; };
-		5A315949202D90D70067717C /* SwipeableLabel+CubicMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwipeableLabel+CubicMovement.swift"; sourceTree = "<group>"; };
-		5A31594B202D960E0067717C /* SwipeableLabel+CircularMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwipeableLabel+CircularMovement.swift"; sourceTree = "<group>"; };
+		5A74DBA3202F4E720097B144 /* SwipeableLabel+CubicMovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SwipeableLabel+CubicMovement.swift"; path = "SwipeableLabel/SwipeableLabel+CubicMovement.swift"; sourceTree = "<group>"; };
+		5A74DBA4202F4E730097B144 /* SwipeableLabel+CircularMovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SwipeableLabel+CircularMovement.swift"; path = "SwipeableLabel/SwipeableLabel+CircularMovement.swift"; sourceTree = "<group>"; };
+		5A74DBA5202F4E730097B144 /* SwipeableLabel+DashMovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SwipeableLabel+DashMovement.swift"; path = "SwipeableLabel/SwipeableLabel+DashMovement.swift"; sourceTree = "<group>"; };
 		6063D675227C870AEDACAB1BF40DB5A3 /* Pods-SwipeableLabel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwipeableLabel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6A6559478B12CE33D913EEB182E5064F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		786E185E1D333E24EFCEB342F1F61D9E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,11 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				E58471FBE17C418828AB074988CE5FC9 /* Configuration.swift */,
-				5A315947202D907A0067717C /* SwipeableLabel+DashMovement.swift */,
-				5A315949202D90D70067717C /* SwipeableLabel+CubicMovement.swift */,
-				5A31594B202D960E0067717C /* SwipeableLabel+CircularMovement.swift */,
 				ACCBB31EC310F6A4C6A9842BE47801BF /* SwipeableLabel.swift */,
 				0075283CEB379BD9D104D92EA440CB6C /* SwipeableLabelDelegate.swift */,
+				5A74DBA4202F4E730097B144 /* SwipeableLabel+CircularMovement.swift */,
+				5A74DBA3202F4E720097B144 /* SwipeableLabel+CubicMovement.swift */,
+				5A74DBA5202F4E730097B144 /* SwipeableLabel+DashMovement.swift */,
 				91F79AA8D1754AA8C19017253E568330 /* Support Files */,
 			);
 			name = SwipeableLabel;
@@ -345,13 +345,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A74DBA6202F4E730097B144 /* SwipeableLabel+CubicMovement.swift in Sources */,
+				5A74DBA7202F4E730097B144 /* SwipeableLabel+CircularMovement.swift in Sources */,
 				F43C163F50D9B5B004E8DAA970DBA0E3 /* Configuration.swift in Sources */,
 				3DE145FAE93ECD74B13CE4735DFCEDFF /* SwipeableLabel-dummy.m in Sources */,
-				5A315948202D907A0067717C /* SwipeableLabel+DashMovement.swift in Sources */,
-				5A31594C202D960E0067717C /* SwipeableLabel+CircularMovement.swift in Sources */,
+				5A74DBA8202F4E730097B144 /* SwipeableLabel+DashMovement.swift in Sources */,
 				EE8D75BEBDCB83E6676A04EB478B241B /* SwipeableLabel.swift in Sources */,
 				CAAC70C8B6FD4121F2CDB46CED8F5C61 /* SwipeableLabelDelegate.swift in Sources */,
-				5A31594A202D90D70067717C /* SwipeableLabel+CubicMovement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
