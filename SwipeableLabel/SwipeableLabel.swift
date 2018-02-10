@@ -8,45 +8,34 @@
 import UIKit
 
 open class SwipeableLabel: UILabel {
+    
+    /// Determine which effect the label takes when swipe
+    ///
+    /// - Cases:
+    ///   - dash: label text moves like dash
+    ///   - cubic: moves like rotating box
     open weak var delegate: SwipeableLabelDelegate?
     
-    var offset: CGFloat = 50
+    /// Determine which effect the label takes when swipe
+    ///
+    /// - Cases:
+    ///   - dash: label text moves like dash
+    ///   - cubic: moves like rotating box
+    open var offset: CGFloat = 0
     
-    let prevAuxilaryLabel: UILabel = {
-        let label = UILabel()
-        return label
-    }()
+    /// Determine which effect the label takes when swipe
+    ///
+    /// - Cases:
+    ///   - dash: label text moves like dash
+    ///   - cubic: moves like rotating box
+    open var movementType: MovementType = .dash
     
-    let nextAuxilaryLabel: UILabel = {
-        let label = UILabel()
-        return label
-    }()
-    
-    let swipingLeftGestureRecognizer: UISwipeGestureRecognizer = {
-        let recognizer = UISwipeGestureRecognizer()
-        recognizer.direction = .left
-        return recognizer
-    }()
-    
-    let swipingRightGestureRecognizer: UISwipeGestureRecognizer = {
-        let recognizer = UISwipeGestureRecognizer()
-        recognizer.direction = .right
-        return recognizer
-    }()
-    
-    let swipingUpGestureRecognizer: UISwipeGestureRecognizer = {
-        let recognizer = UISwipeGestureRecognizer()
-        recognizer.direction = .up
-        return recognizer
-    }()
-    
-    let swipingDownGestureRecognizer: UISwipeGestureRecognizer = {
-        let recognizer = UISwipeGestureRecognizer()
-        recognizer.direction = .down
-        return recognizer
-    }()
-    
-    var direction: SwipeDirection = .horizontal {
+    /// Determine which direction the label swipe
+    ///
+    /// - Cases:
+    ///   - horizontal: able to swipe to left and right
+    ///   - vertical: able to swipe to up and down
+    open var direction: SwipeDirection = .horizontal {
         didSet {
             removeAllGestureRecognizerTargets()
             
@@ -60,9 +49,50 @@ open class SwipeableLabel: UILabel {
         }
     }
     
-    enum Move {
-        case previous
-        case next
+    ///
+    /// Collection index in SwipeableLabel is formed with Integer type
+    ///
+    internal var currentIndex: Int = 0
+    
+    enum Move: Int {
+        case previous = -1
+        case next = 1
+    }
+    
+    private let swipingLeftGestureRecognizer: UISwipeGestureRecognizer = {
+        let recognizer = UISwipeGestureRecognizer()
+        recognizer.direction = .left
+        return recognizer
+    }()
+    
+    private let swipingRightGestureRecognizer: UISwipeGestureRecognizer = {
+        let recognizer = UISwipeGestureRecognizer()
+        recognizer.direction = .right
+        return recognizer
+    }()
+    
+    private let swipingUpGestureRecognizer: UISwipeGestureRecognizer = {
+        let recognizer = UISwipeGestureRecognizer()
+        recognizer.direction = .up
+        return recognizer
+    }()
+    
+    private let swipingDownGestureRecognizer: UISwipeGestureRecognizer = {
+        let recognizer = UISwipeGestureRecognizer()
+        recognizer.direction = .down
+        return recognizer
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    deinit {
+        removeAllGestureRecognizerTargets()
     }
     
     override open func layoutSubviews() {
@@ -82,26 +112,12 @@ open class SwipeableLabel: UILabel {
         addGestureRecognizer(swipingDownGestureRecognizer)
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    deinit {
-        removeAllGestureRecognizerTargets()
-    }
-    
-    private var currentIndex: Int = 0
-    
     private func transformTo(direction: UISwipeGestureRecognizerDirection) -> CGAffineTransform {
         switch direction {
         case .left: return CGAffineTransform(translationX: offset, y: 0)
         case .right: return CGAffineTransform(translationX: -offset, y: 0)
-        case .down: return CGAffineTransform(translationX: offset, y: 0)
-        case .up: return CGAffineTransform(translationX: offset, y: 0)
+        case .down: return CGAffineTransform(translationX: 0, y: offset)
+        case .up: return CGAffineTransform(translationX: 0, y: -offset)
         default: return CGAffineTransform(translationX: 0, y: 0)
         }
     }
@@ -113,71 +129,68 @@ open class SwipeableLabel: UILabel {
         swipingDownGestureRecognizer.removeTarget(self, action: #selector(swipeToPrev))
     }
     
-    private func swipe(to: Move, affineTransform: CGAffineTransform) {
-        guard let delegate = delegate else {return}
-        let auxLabel = UILabel(frame: self.bounds)
-        
-        auxLabel.font = font
-        auxLabel.textAlignment = textAlignment
-        auxLabel.textColor = textColor
-        auxLabel.backgroundColor = .clear
-        auxLabel.transform = affineTransform
-        auxLabel.adjustsFontSizeToFitWidth = true
-        
-        auxLabel.alpha = 0
-        addSubview(auxLabel)
-        
-        let items = delegate.numberOfItems(in: self)
-        for i in currentIndex-1...currentIndex+1 where i > 0 && i < items {
-            
-        }
-        
-        var textToReplace = self.text!
-        
-        if to == .next {
-            if currentIndex + 1 < items {
-                textToReplace = delegate.swipableLabel(self, textForItem: currentIndex + 1)
-            }
-        } else {
-            if currentIndex > 0 {
-                textToReplace = delegate.swipableLabel(self, textForItem: currentIndex - 1)
-            }
-        }
-        
-        auxLabel.text = textToReplace
-        
-        UIView.animate(withDuration: 0.32, delay: 0.0, options: .curveEaseIn, animations: {
-            self.transform = affineTransform
-            self.alpha = 0
-        }, completion: nil)
-        
-        UIView.animate(withDuration: 0.18, delay: 0.06, options: .curveEaseIn, animations: {
-            auxLabel.transform = .identity
-            auxLabel.alpha = 1.0
-        }, completion: {_ in
-            auxLabel.removeFromSuperview()
-            
-            if to == .next {
-                if self.currentIndex + 1 < items {
-                    self.currentIndex += 1
-                }
-            } else {
-                if self.currentIndex > 0 {
-                    self.currentIndex -= 1
-                }
-            }
-            self.alpha = 1.0
-            self.transform = .identity
-        })
-    }
-    
     @objc func swipeToPrev(_ sender: UISwipeGestureRecognizer) {
-        let transform = transformTo(direction: sender.direction)
-        swipe(to: .previous, affineTransform: transform)
+        switch movementType {
+        case .dash:
+            let transform = transformTo(direction: sender.direction)
+            dash(to: .previous, affineTransform: transform)
+        case .cubical:
+            cubic(to: .previous, direction: sender.direction)
+        default: break
+        }
     }
     
     @objc func swipeToNext(_ sender: UISwipeGestureRecognizer) {
-        let transform = transformTo(direction: sender.direction)
-        swipe(to: .next, affineTransform: transform)
+        switch movementType {
+        case .dash:
+            let transform = transformTo(direction: sender.direction)
+            dash(to: .next, affineTransform: transform)
+        case .cubical:
+            cubic(to: .next, direction: sender.direction)
+        default: break
+        }
+    }
+    
+    internal func representativeCopiedLabelModel() -> UILabel {
+        let presentLabel = UILabel(frame: self.bounds)
+        
+        presentLabel.font = font
+        presentLabel.textAlignment = textAlignment
+        presentLabel.textColor = textColor
+        presentLabel.backgroundColor = .clear
+        presentLabel.adjustsFontSizeToFitWidth = true
+        presentLabel.alpha = 1
+        
+        return presentLabel
+    }
+    
+    internal func textToReplace(to: Move) -> String {
+        guard let delegate = delegate else { return "" }
+        
+        if to == .next {
+            if currentIndex + 1 < delegate.numberOfItems(in: self) {
+                return delegate.swipableLabel(self, textForItem: currentIndex + 1)
+            }
+        } else {
+            if currentIndex > 0 {
+                return delegate.swipableLabel(self, textForItem: currentIndex - 1)
+            }
+        }
+        return text!
+    }
+    
+    internal func moveIndex(to: Move) {
+        guard let delegate = delegate else { return }
+        
+        if to == .next {
+            if currentIndex + 1 < delegate.numberOfItems(in: self) {
+                currentIndex += 1
+            }
+        } else {
+            if currentIndex > 0 {
+                currentIndex -= 1
+            }
+        }
     }
 }
+
