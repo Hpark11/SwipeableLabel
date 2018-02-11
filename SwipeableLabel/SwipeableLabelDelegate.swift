@@ -17,10 +17,11 @@ public protocol SwipeableLabelDelegate: NSObjectProtocol {
     /// - Return: Int
     func numberOfItems(in label: SwipeableLabel) -> Int
     
-    /// recognize the number of strings that will be used in the label
+    /// connect with the collection of data to the label
     ///
     /// - Parameters:
     ///   - label: SwipeableLabel itself
+    ///   - at: Integer Index
     ///
     /// - Return: String
     func swipableLabel(_ label: SwipeableLabel, textForItem at: Int) -> String

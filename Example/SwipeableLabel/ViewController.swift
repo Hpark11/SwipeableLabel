@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         horizontalSwipeLabel1.delegate = self
-        horizontalSwipeLabel1.offset = 30
         horizontalSwipeLabel1.movementType = .cubical
         
         horizontalSwipeLabel2.delegate = self
@@ -28,12 +27,11 @@ class ViewController: UIViewController {
         
         verticalSwipeLabel1.delegate = self
         verticalSwipeLabel1.direction = .vertical
-        verticalSwipeLabel1.offset = 20
         verticalSwipeLabel1.movementType = .cubical
         
         verticalSwipeLabel2.delegate = self
         verticalSwipeLabel2.direction = .vertical
-        verticalSwipeLabel2.offset = 92
+        verticalSwipeLabel2.offset = 30
     }
 }
 extension ViewController: SwipeableLabelDelegate {

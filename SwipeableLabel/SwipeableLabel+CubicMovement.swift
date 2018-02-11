@@ -8,7 +8,7 @@
 import Foundation
 
 extension SwipeableLabel {
-    func cubic(to: Move, direction: UISwipeGestureRecognizerDirection) {
+    internal func cubic(to: Move, direction: UISwipeGestureRecognizerDirection) {
         let presentLabel = representativeCopiedLabelModel()
         presentLabel.text = textToReplace(to: to)
         

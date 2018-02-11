@@ -8,5 +8,7 @@
 import Foundation
 
 extension SwipeableLabel {
-    
+    internal func circle(to: Move, direction: UISwipeGestureRecognizerDirection) {
+        // TODO
+    }
 }

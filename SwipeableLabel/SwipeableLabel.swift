@@ -9,18 +9,28 @@ import UIKit
 
 open class SwipeableLabel: UILabel {
     
-    /// Determine which effect the label takes when swipe
+    /// func numberOfItems(in label: SwipeableLabel) -> Int
+    /// recognize the number of strings that will be used in the label
     ///
-    /// - Cases:
-    ///   - dash: label text moves like dash
-    ///   - cubic: moves like rotating box
+    /// - Parameters:
+    ///   - label: SwipeableLabel itself
+    ///
+    /// - Return: Int
+    ///
+    /// func swipableLabel(_ label: SwipeableLabel, textForItem at: Int) -> String
+    /// connect with the collection of data to the label
+    ///
+    /// - Parameters:
+    ///   - label: SwipeableLabel itself
+    ///   - at: Integer Index
+    ///
+    /// - Return: String
     open weak var delegate: SwipeableLabelDelegate?
     
     /// Determine which effect the label takes when swipe
     ///
     /// - Cases:
-    ///   - dash: label text moves like dash
-    ///   - cubic: moves like rotating box
+    ///   - It only can be applied to the label that use dash movement
     open var offset: CGFloat = 0
     
     /// Determine which effect the label takes when swipe
@@ -28,9 +38,10 @@ open class SwipeableLabel: UILabel {
     /// - Cases:
     ///   - dash: label text moves like dash
     ///   - cubic: moves like rotating box
+    ///   - circular: circular movement
     open var movementType: MovementType = .dash
     
-    /// Determine which direction the label swipe
+    /// When user selected which direction the label swipe, proper reconizers will be added to the target
     ///
     /// - Cases:
     ///   - horizontal: able to swipe to left and right
